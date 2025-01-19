@@ -1,0 +1,487 @@
+* {
+  box-sizing: border-box; /* Zajistí správné výpočty šířky pro všechny elementy */
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* background-color: #005f6a; */
+  /* background-color: rgb(147, 185, 218); */
+  background-color: rgb(0, 64, 158);
+
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Zakáže horizontální přetečení */
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100%;
+  min-height: 100%;
+}
+
+nav p {
+  margin: 0 0 0 10px;
+  padding: 0;
+  font-family: sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+  text-align: left;
+  /* Zajistí prázdné místo mezi odstavcem a seznamem */
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0; /* Odstraní mezery nahoře a dole kolem seznamu */
+  padding: 0; /* Odstraní vnitřní odsazení seznamu */
+  margin-left: 40px;
+}
+
+li {
+  margin: 0 10px;
+}
+
+.b {
+  font-weight: bolder;
+}
+li a {
+  font-family: sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+}
+nav {
+  background-color: white;
+  padding: 20px 20px 20px 0;
+  width: auto;
+  display: flex;
+  justify-content: end;
+  flex: 1;
+  align-items: center;
+}
+nav p {
+  font-family: sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+  text-align: left;
+}
+
+li {
+  margin: 0 10px;
+}
+
+.b {
+  font-weight: bolder;
+}
+
+li a {
+  font-family: sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+}
+/* Černé pozadí pro celý obsah */
+.clanek {
+  display: flex;
+  justify-content: space-between;
+  gap: 1%;
+  align-items: stretch; /* Zajistí, že všechny články budou mít stejnou výšku */
+  padding: 20px 1%;
+  width: 100%; /* Zajistí, že se články roztáhnou na celou šířku */
+}
+
+.content {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 10px 30px 8px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  flex: 1; /* Zajistí, že všechny články budou stejné šířky */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin: 0; /* Odstraní mezery mezi články */
+}
+
+.content img {
+  width: auto;
+  height: 40vh;
+  object-fit: contain;
+  border-radius: 8px;
+  overflow: hidden; /* Oříznutí přesahujícího obsahu */
+  margin-bottom: 10px;
+  align-self: center;
+}
+
+.text-area {
+  padding: auto;
+  margin: 0 0 5vh 0;
+}
+
+.content h2 {
+  margin-bottom: 3vh;
+  margin-top: 0;
+  padding: 5px 0;
+}
+.content p {
+  margin: 0;
+  padding: 5px 0;
+}
+
+@media (max-width: 800px) {
+  .clanek {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+.text-section {
+  font-size: 1rem;
+  color: black;
+  text-align: center;
+  justify-content: center;
+}
+
+.image-section img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.line {
+  height: 2px; /* Výška čáry */
+  background-color: rgb(0, 74, 126); /* Barva čáry */
+  margin: 10px 0; /* Odstranit mezery mezi čárou a textem */
+  opacity: 0.7;
+  width: 100%;
+}
+
+h1 {
+  font-family: "Stick No Bills", sans-serif;
+  text-align: center;
+  font-size: 60px;
+  margin-top: 30px;
+  color: white;
+
+  text-shadow: 8px 8px 4px rgba(0, 0, 0, 0.2);
+}
+h2 {
+  margin: 50px 0 0 0;
+  font-family: "Stick No Bills", sans-serif;
+  text-align: center;
+  font-size: 40px;
+  text-decoration: none;
+}
+h3 {
+  font-family: "Tomorrow", sans-serif;
+  text-align: left;
+  font-size: 1.5em;
+}
+h4 {
+  font-family: "Tomorrow", sans-serif;
+}
+.uvod {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+p {
+  font-family: "Tomorrow", sans-serif;
+  text-align: left;
+  margin-top: 3px;
+}
+.left {
+  text-align: left;
+}
+.main-text {
+  font-family: "Tomorrow", sans-serif;
+  margin: 0 0 30px 0;
+  display: flex;
+}
+
+h2 {
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth; /* Aktivuje plynulé skrolování */
+}
+
+.columns-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Vertikální vycentrování obsahu */
+  margin: 0;
+}
+
+.left-col {
+  flex-basis: 30%; /* Nastaví 30 % pro levý sloupec */
+  text-align: left;
+  display: flex;
+  justify-content: center; /* Centruje obrázek horizontálně uvnitř levého sloupce */
+  flex-direction: column;
+}
+
+.divider {
+  width: 2px; /* Nastaví šířku čáry */
+  background-color: rgb(0, 74, 126); /* Barva čáry */
+  min-height: 100px; /* Nastaví minimální výšku */
+  height: auto; /* Přizpůsobí se výšce obsahu */
+  align-self: stretch; /* Roztáhne čáru na výšku rodiče */
+  margin: 0 16px; /* Přidá prostor mezi čárou a sloupci */
+}
+
+.right-col {
+  text-align: left;
+  flex-basis: 70%;
+  padding-top: 0;
+  margin-bottom: auto;
+}
+
+.back-to-content {
+  padding: 10px 15px;
+  background-color: rgb(0, 92, 158);
+  color: white;
+  border-radius: 8px;
+  font-family: "Tomorrow", sans-serif;
+  max-width: 300px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.back-to-content:hover {
+  background-color: rgb(0, 72, 128); /* ztmaví tlačítko při najetí */
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  box-shadow: none;
+}
+button {
+  border: none;
+}
+footer {
+  background-color: #f0f0f0;
+  padding: 10px 0;
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid #ccc;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  max-width: 1200px;
+}
+
+.footer-left,
+.footer-right {
+  width: 45%;
+  display: flex;
+  flex-direction: column; /* Tento řádek přidává vertikální zarovnání */
+  justify-content: center; /* Toto zajistí středění obsahu vertikálně */
+}
+
+.footer-left p,
+.footer-right p {
+  margin: 1px 0;
+  color: #333;
+  font-family: "Teko", sans-serif;
+}
+
+.footer-right a {
+  color: #007acc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-right a:hover {
+  text-decoration: underline;
+}
+
+.gallery {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.gallery img {
+  height: 250px;
+  border-radius: 8px;
+  margin: 20px 10px;
+}
+
+@media (max-width: 800px) {
+  html,
+  body {
+    overflow-x: hidden; /* Zabrání horizontálnímu posunu */
+  }
+
+  .columns-container {
+    flex-direction: column; /* Změní sloupce na sloupce nad sebou */
+    padding-left: 16px;
+    padding-right: 16px;
+    box-sizing: border-box; /* Zabrání přetečení prvků */
+  }
+
+  .divider {
+    display: none; /* Skryje divider */
+  }
+
+  .left-col,
+  .right-col {
+    flex-basis: 100%; /* Nastaví 100 % šířku pro oba sloupce */
+  }
+
+  .map-frame {
+    display: none; /* Skryje iframe na menších obrazovkách */
+  }
+
+  .map-link {
+    display: inline; /* Zobrazí odkaz na menších obrazovkách */
+    font-size: 18px;
+    color: blue;
+    text-decoration: underline;
+    font-family: "Tomorrow", sans-serif;
+  }
+
+  nav {
+    flex-direction: column; /* Změní směr na vertikální */
+    align-items: center; /* Vycentruje odkazy na střed */
+    padding: 0 16px;
+    box-sizing: border-box; /* Zabrání přetečení */
+  }
+
+  /* Úprava pro galerii na menších obrazovkách */
+  .gallery {
+    flex-direction: row;
+    flex-wrap: wrap; /* Zajistí, že obrázky se budou přizpůsobovat šířce a nebudou přetékat */
+    justify-content: center; /* Zarovná obrázky na střed */
+    gap: 10px; /* Nastaví mezery mezi obrázky */
+    padding: 0 16px;
+    box-sizing: border-box; /* Zabrání přetečení */
+  }
+
+  .gallery img {
+    flex-basis: calc(
+      50% - 10px
+    ); /* Nastaví šířku obrázků na 50 % minus mezera, aby se vedle sebe vešly dva */
+    max-width: 100%; /* Zabrání obrázkům v přetečení kontejneru */
+    height: auto; /* Zachová poměr stran obrázků */
+    border-radius: 8px;
+  }
+}
+@media print {
+  h1 {
+    text-shadow: none;
+    color: black;
+    margin: 0 0;
+  }
+  h2 {
+    margin: 0 0;
+  }
+
+  .content {
+    box-shadow: none;
+  }
+  nav,
+  footer,
+  img,
+  .popisek,
+  .fz,
+  .image-section,
+  .button-container,
+  .line {
+    display: none;
+  }
+  @page {
+    size: A4;
+    margin: 20px;
+  }
+  p,
+  .columns-container {
+    page-break-inside: avoid; /* Zabrání rozdělení uvnitř článku */
+  }
+  .columns-container {
+    flex-direction: column;
+    margin: 0;
+  }
+  .left-col {
+    display: none;
+  }
+  h3 {
+    margin-top: 15mm;
+  }
+}
+.search-container button:hover {
+  transform: scale(1.05);
+}
+.search-container button:active {
+  transform: scale(1);
+  background: #003f7f;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 0;
+  margin-right: auto;
+  margin-left: 50px;
+  justify-content: center;
+  flex-grow: 1;
+}
+.search-container button {
+  background-color: rgb(0, 74, 126); /* Přechod barev */
+  color: white;
+  border: none;
+  border-radius: 0 8px 8px 0; /* Zaoblení pravé strany tlačítka */
+  padding: 5px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Animace při najetí */
+  font-family: sans-serif;
+}
+.search-container input[type="text"] {
+  border: none;
+  outline: none;
+  padding: 5px 10px;
+  flex-grow: 1;
+  font-size: 16px;
+  border-radius: 25px 0 0 25px; /* Zaoblení levé strany pole */
+  font-family: sans-serif;
+}
+.like-button {
+  padding: 10px 15px;
+  background-color: rgb(0, 92, 158);
+  color: white;
+  border-radius: 8px;
+  font-family: "Tomorrow", sans-serif;
+  max-width: 300px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 2vh;
+}
+.like-button:hover {
+  transform: scale(1.05);
+}
+.like-button:active {
+  transform: scale(1);
+  background: #003f7f;
+}

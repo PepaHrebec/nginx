@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oblíbené filmy - Filmová databáze</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@200..800&family=Teko:wght@300..700&family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="../scripts/liked-movies.js" defer></script>
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../imgs/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../imgs/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../imgs/favicon_io/favicon-16x16.png"
+    />
+  </head>
+
+  <body>
+    <nav class="nav-bar with-login" id="nav-bar-login" style="display: none">
+      <p class="user-name"></p>
+      <div class="search-container">
+        <input
+          type="text"
+          name="query"
+          placeholder="Vyhledat film..."
+          id="movie-name"
+          required
+        />
+        <button type="submit" id="find-movie">Vyhledat</button>
+      </div>
+      <ul>
+        <li>
+          <a id="uvod" href="/">Náhodné filmy</a>
+        </li>
+        <li>
+          <a id="login" class="b" href="liked-movies.html">Oblíbené filmy</a>
+        </li>
+        <li>
+          <a id="logout-link" href="#">Odhlásiti se</a>
+        </li>
+      </ul>
+    </nav>
+
+    <h1>Oblíbené filmy:</h1>
+    <div id="liked-movies"></div>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-left">
+          <p>© 2024 <strong>Jiří Měřínský</strong>. Všechna práva vyhrazena.</p>
+          <p>Filmová databáze</p>
+        </div>
+
+        <div class="footer-right">
+          <p>
+            Kontakt:
+            <a href="https://www.facebook.com/jirka.merak" target="_blank"
+              >Facebook</a
+            >
+            |
+            <a
+              href="https://www.linkedin.com/in/ji%C5%99%C3%AD-m%C4%9B%C5%99%C3%ADnsk%C3%BD-90a000179/"
+              target="_blank"
+              >Linkedin</a
+            >
+            |
+            <a href="https://jiri.merinsky.eu" target="_blank">Web</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

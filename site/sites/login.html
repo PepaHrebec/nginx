@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Přihlášení - Filmová databáze</title>
+    <link rel="stylesheet" href="../styles/login.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@200..800&family=Teko:wght@300..700&family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../imgs/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../imgs/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../imgs/favicon_io/favicon-16x16.png"
+    />
+    <script src="../scripts/login.js" defer></script>
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <ul>
+        <li>
+          <a id="uvod" href="/">Úvod</a>
+        </li>
+        <li>
+          <a id="login" class="b" href="login.html">Příhlásiti se</a>
+        </li>
+        <li>
+          <a id="register" href="register.html">Registrace</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="login-container">
+      <h1>Přihlášení</h1>
+      <form class="login-form">
+        <label for="username">Uživatelské jméno</label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Zadejte své uživatelské jméno"
+          required
+        />
+
+        <label for="password">Heslo</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Zadejte své heslo"
+          required
+        />
+        <p class="error-message" hidden>
+          Uživatelské jméno nebo heslo je špatně!
+        </p>
+
+        <button type="submit">Přihlásit se</button>
+        <p class="register-link">
+          Nemáte účet? <a href="register.html">Zaregistrujte se</a>
+        </p>
+      </form>
+    </div>
+  </body>
+</html>
