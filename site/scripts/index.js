@@ -109,7 +109,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Přesměrování na stránku s filmem
         window.location.href =
-          "https://filmy.merinsky.eu/sites/found-movie.html";
+          "https://site-production-70c0.up.railway.app/sites/found-movie.html";
       } catch (error) {
         console.error("Chyba při hledání filmu:", error);
       }
