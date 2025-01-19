@@ -119,7 +119,7 @@ document.addEventListener("DOMContentLoaded", async function () {
               //     const movieId = event.target.getAttribute("data-movie-id"); // Získání ID filmu z atributu
               //     try {
               //       const response = await fetch(
-              //         `http://localhost:3000/list/${movieId}`,
+              //         `https://jirka-production.up.railway.app/list/${movieId}`,
               //         { method: "POST", credentials: "include" }
               //       );
               //       location.reload();
@@ -194,7 +194,7 @@ document.addEventListener("DOMContentLoaded", async function () {
         localStorage.setItem("movieData", JSON.stringify(data));
 
         window.location.href =
-          "https://site-production-70c0.up.railway.app/sites/found-movie.html";
+          "https://filmy.merinsky.eu/sites/found-movie.html";
       } catch (error) {
         console.error("Chyba při hledání filmu:", error);
       }
