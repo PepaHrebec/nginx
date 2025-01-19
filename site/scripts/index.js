@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   async function fetchRandomMovies() {
     try {
-      const response = await fetch(`http://jirka-production.up.railway.app/`, {
+      const response = await fetch(`https://jirka-production.up.railway.app/`, {
         credentials: "include",
       });
       if (!response.ok) {
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
         likeButton.addEventListener("click", async () => {
           try {
             const response = await fetch(
-              `http://jirka-production.up.railway.app/list/${randomMovie.id}`,
+              `https://jirka-production.up.railway.app/list/${randomMovie.id}`,
               { method: "POST", credentials: "include" }
             );
             console.log(response);
@@ -77,7 +77,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
   async function getMovieById(wantedId) {
     const response = await fetch(
-      `http://jirka-production.up.railway.app/movie/${wantedId}`
+      `https://jirka-production.up.railway.app/movie/${wantedId}`
     );
     if (!response.ok) {
       throw new Error("Chyba při načítání dat z API");
@@ -98,7 +98,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       try {
         const response = await fetch(
-          `http://jirka-production.up.railway.app/movie/search/${movieName}`,
+          `https://jirka-production.up.railway.app/movie/search/${movieName}`,
           { credentials: "include" }
         );
         const data = await response.json();
@@ -117,7 +117,7 @@ document.addEventListener("DOMContentLoaded", function () {
   async function user() {
     try {
       const response = await fetch(
-        "http://jirka-production.up.railway.app/user-info",
+        "https://jirka-production.up.railway.app/user-info",
         {
           credentials: "include",
         }
@@ -153,7 +153,7 @@ document
     event.preventDefault(); // Zabraň přesměrování
     try {
       const response = await fetch(
-        "http://jirka-production.up.railway.app/logout",
+        "https://jirka-production.up.railway.app/logout",
         {
           method: "POST",
           credentials: "include", // Důležité pro odeslání cookies (relace)

@@ -13,7 +13,7 @@ form.addEventListener("submit", async function (event) {
   // Kontrola, zda uživatelské jméno již není zabráno
   try {
     const response = await fetch(
-      "http://jirka-production.up.railway.app/login",
+      "https://jirka-production.up.railway.app/login",
       {
         credentials: "include",
         method: "POST",

@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", async function () {
       console.log("Zkouším ověřit login");
 
       const response = await fetch(
-        "http://jirka-production.up.railway.app/user-info",
+        "https://jirka-production.up.railway.app/user-info",
         {
           credentials: "include",
         }
@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     }
     try {
       const response = await fetch(
-        `http://jirka-production.up.railway.app/search/liked`,
+        `https://jirka-production.up.railway.app/search/liked`,
         {
           credentials: "include",
         }
@@ -106,7 +106,7 @@ document.addEventListener("DOMContentLoaded", async function () {
               likeButton.addEventListener("click", async () => {
                 try {
                   const response = await fetch(
-                    `http://jirka-production.up.railway.app/list/${movie.id}`,
+                    `https://jirka-production.up.railway.app/list/${movie.id}`,
                     { method: "POST", credentials: "include" }
                   );
                   // console.log(response);
@@ -146,7 +146,7 @@ document.addEventListener("DOMContentLoaded", async function () {
         event.preventDefault(); // Zabraň přesměrování
         try {
           const response = await fetch(
-            "http://jirka-production.up.railway.app/logout",
+            "https://jirka-production.up.railway.app/logout",
             {
               method: "POST",
               credentials: "include", // Důležité pro odeslání cookies (relace)
@@ -185,7 +185,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 
       try {
         const response = await fetch(
-          `http://jirka-production.up.railway.app/movie/search/${movieName}`,
+          `https://jirka-production.up.railway.app/movie/search/${movieName}`,
           { credentials: "include" }
         );
         const data = await response.json();

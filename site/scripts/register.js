@@ -24,7 +24,7 @@ form.addEventListener("submit", async function (event) {
   }
 
   const response = await fetch(
-    "http://jirka-production.up.railway.app/register",
+    "https://jirka-production.up.railway.app/register",
     {
       method: "POST",
       headers: {
