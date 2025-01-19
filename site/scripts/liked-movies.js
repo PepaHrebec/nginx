@@ -193,7 +193,8 @@ document.addEventListener("DOMContentLoaded", async function () {
 
         localStorage.setItem("movieData", JSON.stringify(data));
 
-        window.location.href = "http://localhost:8080/sites/found-movie.html";
+        window.location.href =
+          "https://site-production-70c0.up.railway.app/sites/found-movie.html";
       } catch (error) {
         console.error("Chyba při hledání filmu:", error);
       }

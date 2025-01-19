@@ -27,7 +27,7 @@ form.addEventListener("submit", async function (event) {
       }
     );
     if (response.status == 200) {
-      window.location.href = "http://localhost:8080";
+      window.location.href = "https://site-production-70c0.up.railway.app/";
     } else {
       // Zde napiš kód pro případ, kdy přihlášení neproběhne úspěšně
       errorMessage.hidden = false;

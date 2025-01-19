@@ -45,6 +45,7 @@ form.addEventListener("submit", async function (event) {
     errorMessage.hidden = false;
   } else if (response.status === 200) {
     alert("Úspěšně registrováno!");
-    window.location.href = "http://localhost:8080/sites/login";
+    window.location.href =
+      "https://site-production-70c0.up.railway.app/sites/login";
   }
 });
